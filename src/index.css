@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Georgia", serif;
+  --font-sans: "Helvetica Neue", Arial, sans-serif;
+  
+  --color-espresso: #2C1B18;
+  --color-oat: #F5F2ED;
+  --color-oat-dark: #E8E2D9;
+  --color-forest: #2D4635;
+  --color-white: #FFFFFF;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-oat text-espresso font-sans antialiased;
+  }
+}
